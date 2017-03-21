@@ -54,7 +54,7 @@ module.exports = {
   devtool: "source-map",
   "plugins": [
     new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.UglifyJsPlugin({ output: {comments: false} }),
+    // new webpack.optimize.UglifyJsPlugin({ output: {comments: false} }),
     new ExtractTextPlugin('[name].css', {allChunks: true})
   ]
 };
