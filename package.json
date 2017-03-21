@@ -1,6 +1,6 @@
 {
   "name": "react-loading-pro",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The loading component for react project",
   "main": "dist/index.js",
   "scripts": {
@@ -15,9 +15,6 @@
     "react loading",
     "react"
   ],
-  "bin": {
-    "webpack": "node_modules/webpack/bin/webpack.js"
-  },
   "author": "Ang Yao",
   "license": "MIT",
   "bugs": {
