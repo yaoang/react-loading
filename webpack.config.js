@@ -8,13 +8,30 @@ module.exports = {
   },
   output: {
       path: path.join(__dirname, '/dist/'),
-      filename: "[name].js"
+      filename: "[name].js",
+      libraryTarget: 'umd',
+      library: 'ReactLoadingPro'
   },
   resolve:{
     // must use inverted comma
     extensions: ['', '.js', '.jsx'],
     modulesDirectories: [path.resolve(__dirname, 'node_modules')]
   },
+  externals: [{
+    'react': {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
+  }, {
+    'react-dom': {
+      root: 'ReactDOM',
+      commonjs2: 'react-dom',
+      commonjs: 'react-dom',
+      amd: 'react-dom'
+    }
+  }],
   module: {
     loaders: [
       {
