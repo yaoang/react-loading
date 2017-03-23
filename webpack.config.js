@@ -4,7 +4,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    loading: ["./index.js"]
+    loading: ["./index.js"],
   },
   output: {
       path: path.join(__dirname, '/dist/'),

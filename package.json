@@ -1,10 +1,12 @@
 {
   "name": "react-loading-pro",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "The loading component for react project",
   "main": "dist/loading.js",
   "scripts": {
-    "build": "webpack --progress --colors"
+    "build": "webpack --progress --colors",
+    "build:example": "webpack --config webpack.example.config.js --progress --colors",
+    "start": "node exampleServer.js"
   },
   "repository": {
     "type": "git",
@@ -26,20 +28,24 @@
   },
   "homepage": "https://yaoang.github.io/react-loading/",
   "dependencies": {
-    "classnames": "^2.2.5",
-    "react": "^15.4.2"
+    "classnames": "^2.2.5"
   },
   "devDependencies": {
     "babel-core": "^5.8.38",
     "babel-loader": "^5.3.2",
+    "babel-polyfill": "^6.23.0",
     "babel-runtime": "^5.8.20",
     "css-loader": "^0.15.6",
+    "express": "^4.15.2",
     "extract-text-webpack-plugin": "^0.8.2",
     "node-sass": "^4.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.12.3",
     "stylus-loader": "^1.2.1",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.10.1"
+    "webpack-dev-server": "^1.10.1",
+    "webpack-hot-middleware": "^2.17.1"
   }
 }
